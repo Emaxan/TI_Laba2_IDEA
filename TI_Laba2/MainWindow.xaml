@@ -1,0 +1,19 @@
+﻿<Window x:Name="WMain" x:Class="TI_Laba2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TI_Laba2_IDEA" Width="700" SizeToContent="Height" WindowStartupLocation="CenterScreen" Background="#FF505050" ResizeMode="NoResize" KeyUp="WMain_KeyDown">
+    <Grid x:Name="GMain">
+        <TextBox x:Name="TbSourceText" Background="#FF969696" Margin="140,10,100,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="25" IsTabStop="False"/>
+        <Label x:Name="LSourceText" Content="Исходный файл:" Margin="0,10,560,0" Height="25" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbEndingPath" Background="#FF969696" Margin="140,50,100,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="25" IsTabStop="False"/>
+        <Label x:Name="LEndingPath" Content="Конечная директория:" Margin="0,50,560,0" Height="25" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbKey" Background="#FF969696" Margin="140,90,100,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="25" IsTabStop="False"/>
+        <Label x:Name="LKey" Content="Ключ:" Margin="0,90,560,0" Height="25" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+        <Button x:Name="BWork" Content="Обработать" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height ="25" Margin="0,130,100,10" Background="#FF969696" Click="BWork_Click" IsDefault="True"/>
+        <Button x:Name="BOpenSource" Content="Открыть..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="80" Height ="25" Margin="0,10,10,0" Background="#FF969696" Click="BOpenSource_Click" IsTabStop="False"/>
+        <Button x:Name="BOpenEndingPath" Content="Открыть..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="80" Height ="25" Margin="0,50,10,0" Background="#FF969696" Click="BOpenEndingPath_Click" IsTabStop="False"/>
+        <Button x:Name="BOpenKey" Content="Открыть..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="80" Height ="25" Margin="0,90,10,0" Background="#FF969696" Click="BOpenKey_Click" IsTabStop="False"/>
+        <CheckBox x:Name="CbDecod" Content="Дешифровка" Background="#FF969696" Margin="140,130,0,0" Checked="CbDecod_Checked" Width="100" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" IsTabStop="False"/>
+        <CheckBox x:Name="CbCod" Content="Шифровка" Background="#FF969696" Margin="251,130,0,0" Width="100" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Checked="CbDecod_Checked" IsTabStop="False"/>
+    </Grid>
+</Window>
